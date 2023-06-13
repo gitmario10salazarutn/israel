@@ -1,0 +1,188 @@
+<!--
+  This component uses @tailwindcss/forms and @tailwindcss/aspect-ratio
+
+  yarn add @tailwindcss/forms @tailwindcss/aspect-ratio
+  npm install @tailwindcss/forms @tailwindcss/aspect-ratio
+
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')]
+-->
+
+<style>
+    .no-spinners {
+      -moz-appearance: textfield;
+    }
+  
+    .no-spinners::-webkit-outer-spin-button,
+    .no-spinners::-webkit-inner-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+    }
+  </style>
+  
+  <section class="mt-16">
+    <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
+      <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-1">
+          <div class="aspect-w-1 aspect-h-1">
+            <img
+              alt="Mobile Phone Stand"
+              class="object-cover rounded-xl"
+              src="https://res.cloudinary.com/dyz9b5bfs/image/upload/v1658082493/vehiculos/f3ycdobawsleabafnwhp.jpg"
+            />
+          </div>
+  
+          <div class="grid grid-cols-2 gap-4 lg:mt-4">
+            <div class="aspect-w-1 aspect-h-1">
+              <img
+                alt="Mobile Phone Stand"
+                class="object-cover rounded-xl"
+                src="https://res.cloudinary.com/dyz9b5bfs/image/upload/v1658082493/vehiculos/f3ycdobawsleabafnwhp.jpg"
+              />
+            </div>
+  
+            <div class="aspect-w-1 aspect-h-1">
+              <img
+                alt="Mobile Phone Stand"
+                class="object-cover rounded-xl"
+                src="https://res.cloudinary.com/dyz9b5bfs/image/upload/v1658082493/vehiculos/f3ycdobawsleabafnwhp.jpg"
+              />
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="sticky top-0">
+          <strong class="border border-blue-600 rounded-full tracking-wide px-3 font-medium py-0.5 text-xs bg-gray-100 text-blue-600"> Pre Order </strong>
+  
+          <div class="flex justify-between mt-8">
+            <div class="max-w-[35ch]">
+              <h1 class="text-2xl font-bold">
+                {{marca.mac_nombre}}
+              </h1>
+  
+              <p class="mt-0.5 text-sm">
+                Producto en Oferta
+              </p>
+  
+              <div class="flex mt-2 -ml-0.5">
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-gray-200"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+  
+            <p class="text-lg font-bold">
+              {{vehiculo.veh_precio}}$
+            </p>
+          </div>
+  
+          <div class="relative mt-4 text-justify">
+            
+                  <p>
+                    {{vehiculo.veh_descripcion}}
+                  </p>
+              
+          </div>
+          
+          <form class="mt-8 flex flex-wrap justify-start gap-x-4 gap-y-4">
+            <fieldset class="w-1/3">
+              <legend class="mb-1 text-sm font-medium font-bold italic">Punto de venta</legend>
+
+                    <span  >
+                      {{vehiculo.veh_ubicacion}}
+                    </span>
+            </fieldset>
+            <fieldset class="w-1/3">
+              <legend class="mb-1 text-sm font-medium font-bold italic">Color</legend>
+
+                    <span >
+                      {{vehiculo.veh_color}}
+                    </span>
+
+            
+            </fieldset>
+  
+            <fieldset class="w-1/3">
+              <legend class="mb-1 text-sm font-medium font-bold italic">Kilometraje</legend>
+
+                    <span >
+                      {{vehiculo.veh_kilometraje}}
+                    </span>
+            </fieldset>
+            <fieldset class="w-1/3">
+              <legend class="mb-1 text-sm font-medium font-bold italic">Año</legend>
+
+                    <span >
+                      {{vehiculo.veh_anio}}
+                    </span>
+            </fieldset>
+           
+  
+
+          </form>
+          <div class="relative max-w-3xl mx-auto text-center mt-8">
+            <span class="absolute inset-x-0 h-px -translate-y-1/2 bg-emerald-200	 top-1/2"></span>
+      
+            <h2 class="relative inline-block px-4 text-2xl font-bold text-center bg-white">
+            Contacto
+            </h2>
+          </div>
+          <form class="mt-8 flex-row flex-wrap justify-start gap-y-4">
+            <fieldset>
+              <legend class="mb-1 text-sm font-medium font-bold italic">Nombres</legend>
+
+                    <span >
+                      {{usuario.usu_nombre}}
+                    </span>
+            </fieldset>
+            <fieldset>
+              <legend class="mb-1 text-sm font-medium font-bold italic">Teléfono</legend>
+
+                    <span >
+                      {{usuario.usu_telefono}}
+                    </span>
+            </fieldset>
+            <fieldset>
+              <legend class="mb-1 text-sm font-medium font-bold italic">Dirección</legend>
+
+                    <span >
+                      {{usuario.usu_direccion}}
+                    </span>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
